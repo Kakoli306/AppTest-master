@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Home"
+        android:id="@+id/mHome_dr_details"
+        app:showAsAction="collapseActionView"
+        android:onClick="homeActivity"/>
+    <item android:title="Add Doctor"
+        android:id="@+id/mDrAdd_dr_details"
+        app:showAsAction="collapseActionView"
+        android:onClick="doctorAddMenu"/>
+    <item android:title="Edit Doctor"
+        android:id="@+id/mDrEdit_dr_details"
+        app:showAsAction="collapseActionView"
+        android:onClick="doctorEditMenu"/>
+    <item android:title="Delete Doctor"
+        android:id="@+id/mDrDelete_dr_details"
+        app:showAsAction="collapseActionView"
+        android:onClick="doctorDeleteMenu"/>
+    <item android:title="Add Medicine"
+        android:id="@+id/m_add_medicine"
+        app:showAsAction="collapseActionView"
+        android:onClick="medicineAddMenu"/>
+    <item android:title="Log Out"
+        android:id="@+id/mLogOut_dr_details"
+        app:showAsAction="collapseActionView"
+        android:onClick="logOutMenu"/>
+
+</menu>

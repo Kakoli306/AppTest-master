@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/download"
+    tools:context="com.example.nil_akash.apptest.doctor.DoctorDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/tvname"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Doctor Name :"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/tvdrName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:text="Doctor Name"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/details"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Details :"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/tvdrDetails"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1.5"
+                        android:text="doctor@gmail.com"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/mail"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Email :"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/tvdrMail"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1.5"
+                        android:text="doctor@gmail.com"
+                        android:autoLink="email"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Phone No :"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/tvdrPhoneNo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1.5"
+                        android:text="01744371919"
+                        android:autoLink="phone"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Location :"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/tvdrLocation"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1.5"
+                        android:text="Dhaka"
+                        android:autoLink="map"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/firstappointmentdate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="Appointment Date :"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/tvdrAppointmentDate"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1.5"
+                        android:text="12/34/2019"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Medicine"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/btnshape"
+                android:textColor="#fff"
+                android:onClick="medicineAdd"/>
+
+            <GridView
+                android:id="@+id/gridMedicine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:numColumns="auto_fit">
+
+            </GridView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

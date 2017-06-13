@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/download"
+    android:gravity="center"
+    android:scrollbars="vertical"
+    android:isScrollContainer="true"
+    app:layout_scrollFlags="scroll"
+
+    tools:context="com.example.nil_akash.apptest.medicine.MedicineInfoAddEdit">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:id="@+id/ibprecsiptionImage"
+                android:layout_margin="10dp"
+                android:src="@drawable/camera_icon"
+
+                android:layout_gravity="center"
+                android:onClick="addPrecsiption"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etprecsiptionDoctorName"
+                    android:hint="Doctor Name"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etprecsiptionDetails"
+                    android:hint="Details"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Date"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btncheckupDate"
+                android:layout_margin="10dp"
+                android:text="Date"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"/>-->
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnaddPrecsiption"
+                android:layout_margin="10dp"
+                android:text="Submit"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:background="@drawable/btnshape"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:onClick="addMedicineInfo"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Home"
+        android:id="@+id/mHome_mInfo"
+        app:showAsAction="collapseActionView"
+        android:onClick="homeMenu"/>
+    <item android:title="Update Information"
+        android:id="@+id/mUpdate_menu"
+        app:showAsAction="collapseActionView"
+        android:onClick="updateInfoMenu"/>
+    <item android:title="Delete Information"
+        android:id="@+id/mDelete_Item"
+        app:showAsAction="collapseActionView"
+        android:onClick="deleteItemMenu"/>
+    <item android:title="Log Out"
+        android:id="@+id/mLogout_mInfo_menu"
+        app:showAsAction="collapseActionView"
+        android:onClick="logoutMinfo"/>
+
+
+</menu>

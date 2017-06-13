@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:theme="@style/AlertDialog.AppCompat"
+    app:layout_scrollFlags="scroll"
+    android:background="@drawable/download"
+    tools:context="com.example.nil_akash.apptest.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etuserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"            />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnsingIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign In"
+            android:background="@drawable/btnshape"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:onClick="signIn"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If you have no account Please "
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register here"
+                android:textStyle="bold|italic"
+                android:textSize="18sp"
+                android:textColor="#0323f4"
+                android:onClick="registrationPage"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
